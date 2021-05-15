@@ -13,7 +13,7 @@ audiodata = sr.AudioFile("data/voicerecord.wav")
 with audiodata as source:
     audio = r.record(source)
 
-result = r.recognize_google(audio, language="tr-TR")
+result = r.recognize_google(audio, language="en-US")
 
  
 # Kodlama verilerini 8 bitlik binary sayiya donusturuyoruz
